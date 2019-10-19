@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html,body{height: 100%; background-color: #363636;}
+
+/*classes auxiliares*/
+
+.center{
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 0;
+}
+
+.clear{clear: both;}
+
+/*fim das classes auxiliares*/
+/*aqui começa css do cabeçalho*/
+
+header{
+    width: 100%;
+    height: 170px;
+    background-color: black;
+    color: white;
+}
+
+.icons-user{
+    float: right;
+}
+
+.icons-user a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.contato{
+    float: left;
+}
+
+.contato ul{list-style-type: none;}
+
+.contato li{
+    display: inline-block;
+}
+
+.contato a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 15px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+div.linha{
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding-top: 20px;
+}
+
+nav.mobile{
+    display: none;
+    float: left;
+}
+
+nav.mobile > i{
+	position: relative;
+	top: 23px;
+	cursor: pointer;
+	font-size: 25px;
+	color: white;
+}
+
+nav.mobile ul{
+	display: none;
+	z-index: 2;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 94px;
+	background: white;
+	list-style-type: none;
+}
+
+nav.mobile li{
+	font-weight: lighter;
+	border-bottom: 1px solid #444;
+	text-align: center;
+	padding:8px 0;
+}
+
+
+nav.mobile a{
+	display: block;
+	text-decoration: none;
+	color: #444;
+}
+
+
+
+nav.desktop{
+    position: relative;
+    top: 50px;
+    float: left;
+}
+
+nav.desktop ul{list-style-type: none;}
+
+nav.desktop li{
+    text-transform: uppercase;
+    font-weight: 800;
+    display: inline-block;
+    font-size: 17px;
+    margin: 0 20px;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid yellow;
+    -webkit-box-shadow: 2px 3px 18px 4px rgba(240,242,175,1);
+    -moz-box-shadow: 2px 3px 18px 4px rgba(240,242,175,1);
+    box-shadow: 2px 3px 18px 4px rgba(240,242,175,1);
+    
+}
+
+nav.desktop a{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+
+nav.desktop li:hover{
+    background-color: #f0f2af;
+    color: black;
+}
+
+.treme:hover{
+    animation-name: treme;
+    animation-duration: .3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes treme{
+    0% {transform: rotate(5deg);}
+    25% {transform: rotate(-5deg);}
+    50% {transform: rotate(5deg);}
+    75% {transform: rotate(-5deg);}
+    100% {transform: rotate(5deg);}
+}
+
+div.logo{
+    position: relative;
+    width: 170px;
+    height: 160px;
+    float: left;
+    top: 5px;
+    left: 70px;
+    z-index: 2;
+}
+
+div.logo img{
+    width: 125px;
+    height: 125px;
+    
+}
+
+div.logo img:hover{
+    animation-name: treme;
+    animation-duration: .3s;
+    animation-iteration-count: infinite;
+}
+
+div.pesquisa{
+    position: relative;
+    top: 50px;
+    left: 200px;
+    width: 30%;;
+    height: 40px;
+    float: left;
+}
+
+div.pesquisa input{
+    width: 100%;
+    height: 100%;
+    padding: 5% 50px 5% 5%;
+    box-sizing: border-box;
+    background: #696969;
+    border: transparent;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+::-webkit-input-placeholder {color: white;}
+:-moz-placeholder {color: white;}
+::-moz-placeholder {color: white;}
+:-ms-input-placeholder {color: white;}
+
+form button{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    color: white;
+    font-size: 18px;
+    padding: 0!important;
+    background: 0 0;
+    border: none;
+    outline: none;
+    pointer-events: none;
+}
+/*aqui acaba o css do cabeçalho*/
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    
+}

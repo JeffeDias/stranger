@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html,body{height: 100%; background-color: #363636;}
+
+/*classes auxiliares*/
+
+.center{
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 0;
+}
+
+.clear{clear: both;}
+
+/*fim das classes auxiliares*/
+
+
+/*começo do super-header*/
+
+header{
+    background-color: black;
+}
+
+div.super-header{
+    display: flex;
+    border-bottom: 1px solid white;
+    width: 100%;
+    justify-content:space-between;
+}
+
+.super-header ul{
+    list-style-type: none;
+    justify-content: space-around;
+    display: flex;
+}
+
+.super-header li{
+    margin: 10px;
+}
+
+.super-header li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.contato{
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 18px;
+    
+}
+
+.user{
+    font-size: 25px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.desktop ul{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-end;
+}
+
+.desktop a{
+    text-decoration: none;
+    color: white;
+    margin: 5%;
+}
+
+.desktop li{
+    -webkit-box-shadow: 1px 1px 10px 1px rgba(238,201,0,.6);
+    -moz-box-shadow: 1px 1px 10px 1px rgba(238,201,0,.6);
+    box-shadow: 1px 1px 10px 1px rgba(238,201,0,.6);
+    border: 1px solid #F4FA58;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    background-color: black;
+}
+
+.desktop li:hover{
+    border-color: white;
+    background-color: #F4FA58;
+    color: black;
+}
+
+.treme:hover{
+    animation-name: treme;
+    animation-duration: .3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes treme{
+    0% {transform: rotate(5deg);}
+    25% {transform: rotate(-5deg);}
+    50% {transform: rotate(5deg);}
+    75% {transform: rotate(-5deg);}
+    100% {transform: rotate(5deg);}
+}
+
+div.logo img:hover{
+    animation-name: treme;
+    animation-duration: .3s;
+    animation-iteration-count: infinite;
+}
+
+nav.mobile{
+    display: none;
+}
+
+
+.logo img{
+    width: 130px;
+    height: auto;
+    margin-top: 5%;
+}
+
+div.pesquisa input{
+    padding: 5% 50px 5% 5%;
+    box-sizing: border-box;
+    background: #696969;
+    border: transparent;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: none;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 4%;
+}
+
+::-webkit-input-placeholder {color: white;}
+:-moz-placeholder {color: white;}
+::-moz-placeholder {color: white;}
+:-ms-input-placeholder {color: white;}
+
+/*aqui termina o header*/
+
+/*aqui começa o css do slider*/
+section.banner{
+    width: 100%;
+    height: 80%;
+    max-height: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+
+section.banner img{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 400px;
+}
+
+.bullets-nav{
+	position: absolute;
+	bottom:10px;
+	width: 100%;
+	text-align: center;
+
+}
+
+.bullets-nav span{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	border-radius: 8px;
+	background-color: #ccc;
+	cursor: pointer;
+	margin:0 20px;
+}
+
+/*aqui acaba o css do slider*/
+
+
+/* aqui começa a section mundo*/
+
+section.mundo{
+    margin-top: 5%;
+}
+
+.mundo h2{
+    text-align: center;
+    width: 170px;
+    margin: 0 auto;
+    padding: 5px 5px;;
+    border: 1px solid #F4FA58;
+    background-color: black;
+    color: white;
+    font-size: 26px;
+}
+
+.mundo ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+
+}
+
+.mundo a{
+    text-decoration: none;
+}
+
+.mundo li{
+    box-shadow: 1px 1px 10px 1px rgba(238,201,0,.6);
+    border: 1px solid #F4FA58;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    background-color: black;
+    color: #F4FA58;
+}
+
+.mundo li:hover{
+    background-color: white;
+    color: black
+}
+
+section.marcas{
+    margin-top: 7%;
+}
+
+section.marcas > .center{
+    display: flex;
+    justify-content: space-around;
+}
+
+.marcas a{
+    text-decoration: none;
+    color: white;
+}
+
+.marcas .novo{
+    width: 600px;
+    height: 250px;
+    background-color: aqua;
+    display: table-cell;
+    vertical-align:middle;
+
+
+}
+
+.novo {
+    background-image: url(../img/novidades.png);
+    background-size: 28%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+
+.novo h2{
+    margin-left: 4%;
+}
+
+.novo span{
+    margin-left: 6%;
+}
+
+.novo h2, .ofertas h2{
+    font-size: 36px;
+    font-weight: 800;
+    padding-bottom: 2%;
+
+}
+
+.novo span, .ofertas span{
+    font-size: 22px;
+    font-weight: lighter;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+.marcas .ofertas{
+    width: 600px;
+    height: 250px;
+    background-color:deeppink;
+    display: table-cell;
+    vertical-align:middle;
+    text-align: end;
+}
+
+.ofertas h2{
+    margin-right: 4%;
+}
+
+.ofertas span{
+    margin-right: 6%;
+}
+
+/*aqui acaba section marcas*/
+
+
+/*aqui começa section parallax*/
+
+section.parallax{
+    margin-top: 5%;
+    padding: 40px 0;
+    width: 100%;
+    min-height: 300px;
+    background-image:url('../img/parallax.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*aqui acaba o parallax*/
+
+
+/*aqui começa beneficios*/
+
+.beneficio{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding-right: 5%;
+}
+
+/*aqui acaba section benefio*/
+
+/*aqui começa o css do footer*/
+footer{
+    width: 100%;
+    background-color: #838B8B;
+    
+}
+
+div.position{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 20px 20px;
+}
+
+
+div.icons-cartao h2{
+    font-size: 25px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+div.icons-cartao i{
+    font-size: 35px;
+    margin-left: 5px;
+}
+
+
+div.relacionamento h2{
+    font-size: 25px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+div.relacionamento ul{
+    list-style-type: none;
+    margin-left: 5px;
+}
+
+div.relacionamento a{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+
+
+div.icons-social h2{
+    font-size: 25px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+div.icons-social a{
+    text-decoration: none;
+    font-size: 35px;
+    margin-left: 15px;
+}
+
+div.copy{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 40px;
+}
+
+div.chat{
+    background-image: url(../img/chat.png);
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 4%;;
+    right: 1%;
+    cursor: pointer;
+}
+/*aqui acaba o css do footer*/
+
+
+/*aqui começa as medias screen*/
+
+@media screen and (max-width:1250px){
+    .beneficio img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .beneficio img[src="img/flecha.png"]{
+        display: none;
+    }
+}
+
+@media screen and (max-width:980px){
+    nav.desktop a{
+        margin: 1%;
+    }
+    div.super-header{
+    justify-content:space-around;
+    }
+}
+@media screen and (max-width:880px){
+    nav.desktop{
+        display: none;
+    }
+    .header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    }
+    
+    nav.mobile{
+        display: block;
+        color: white;
+    }
+    
+    .logo img{
+        margin: 0 auto;
+        width: 100px;
+        padding: 0;
+    }
+    
+    section.marcas{
+        width: 80%;
+        margin: 5% auto;
+    }
+    
+    section.marcas a{
+        margin-left: 3%;
+    }
+}
